@@ -190,7 +190,7 @@ function endGame() {
   document.body.innerHTML = results;
 
   // Attach listeners AFTER elements exist
-  document.getElementById('play-again-1').addEventListener('click', () => location.reload());
+  // document.getElementById('play-again-1').addEventListener('click', () => location.reload());
   document.getElementById('play-again-2').addEventListener('click', () => location.reload());
 }
 
