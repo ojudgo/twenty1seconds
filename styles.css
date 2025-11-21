@@ -1,0 +1,96 @@
+body {background: #0D0D15;
+color: white;
+display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.centred {
+display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  gap: 10px;              /* vertical spacing */
+
+}
+
+.centred-no-gap {
+display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  width: 100%;
+  max-width: 300px           
+
+}
+
+.centred-no-gap hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #fafafa;
+  margin: 10px 0;
+}
+
+.centred-no-gap p {
+  margin: 2px 0;
+  text-align: center;
+}
+
+button { width: 100%;
+  max-width: 200px;
+  height: 200px;
+  cursor: pointer;
+  padding: 0;
+  background-color: #121212;
+  color: #FAFAFA;
+  border: none;
+  border-radius: 50%;}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#play-ring {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  
+}
+
+#play-button {
+  transition: transform 0.1s ease;
+  
+}
+
+#play-button:active {
+  transform: translateY(2px);
+}
+
+#play-button:active polygon {
+  transform: scale(0.9);
+  transform-origin: 50% 50%;
+  fill: #E0E0E0; /* slight dim for extra realism */
+}
+
+textarea {
+  width: 100%;
+  max-width: 200px;
+  height: 60px;
+  padding: 5px;      /* adds 10px of space on all sides */
+  box-sizing: border-box; /* ensures padding doesn’t increase total width */
+  resize: none;
+  background-color: #FAFAFA;
+  color: #121212;
+   border-radius: 8px;
+}
+
+.skip-button {
+  width: 100%;
+  max-width: 100px;
+  height: 30px;
+  padding: 5px;      /* adds 10px of space on all sides */
+  box-sizing: border-box; /* ensures padding doesn’t increase total width */
+  resize: none;
+  background-color: #121212;
+  color: #FAFAFA;
+   border-radius: 8px;
+  border: 1px solid #FFEB3B;
+  display: none
+}
